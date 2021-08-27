@@ -1,0 +1,152 @@
+/* 头部 */
+.header{
+
+    background-color: #fff;
+    // background-color: #5289f4;
+    padding:1em 0em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+
+    transition: all linear .4s;
+
+    .navbar{
+        background-color:transparent;
+        border:0px;
+        border-radius: 0px;
+        margin: 0;
+
+        .navbar-brand{
+            color:#5289f4;
+            font-size: 1.5em;
+          
+        }
+
+        .nav{
+            
+
+            a{
+                color:#000;
+                text-transform: uppercase;
+                border-bottom:3px solid transparent;
+                transition:all linear .5s;
+                font-size: 1.3em;
+                margin: 0em 1em;
+                &:hover{
+                    background-color: #5289f4;
+                }
+
+            }
+
+        }
+    }
+ 
+}
+
+.message{
+    background: #000;
+    
+    .container{
+        padding: 5em 0em;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .left{
+            padding-right: 4em;
+            .input{
+                margin-bottom: 1.5em;
+                input{
+                    background: #000;
+                    font-size: 1.2em;
+                    margin-right: .5em;
+                    line-height: 1.7em;
+                    border: 1px solid #fff;
+                }
+            }
+            .textarea{
+                margin-bottom: 1.5em;
+                textarea{
+                    background: #000;
+                    border: 1px solid #fff;
+                    height: 8em;
+                    width: 98%;
+                }
+            }
+            .button{
+                
+                button{
+                    background-color: #5289f4;
+                    width: 96%;
+                    display: block;
+                    margin: 0 auto;
+                    line-height: 2.2em;
+                }
+            }
+        }
+
+        .right{
+            .dh{
+                h1{
+                    letter-spacing: 4px;
+                    font-size: 1.8em;
+                }
+                span{
+                    font-size: .9em;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        @media screen and(max-width:710px) {
+            &{
+                .left{
+                    padding:0;
+                }
+                .right{
+                   display: flex;
+                   flex-wrap: wrap;
+                   justify-content: space-between;
+                   padding-left: 1em;
+                    .dh{
+                        width: 45%;
+                        margin-bottom: 1em;
+                        h1{
+                            
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        @media screen and(max-width:420px) {
+            &{
+                .left{
+                    padding-left: 1em;
+                    .input{
+                        input{
+                            width: 98%;
+                            margin-bottom: 1em;
+                            line-height: 2em;
+                        }
+                    }
+                }
+
+                .right{
+                    .dh{
+                        h1{
+                            font-size: 1.3em;
+                        }
+                        span{
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

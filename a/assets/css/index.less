@@ -1,0 +1,233 @@
+.bg{
+    margin-bottom: 5em;
+    cursor: pointer;
+}
+
+.property{
+    margin-bottom: 5em;
+    .container{
+        .buj{
+            text-align: center;
+            margin-bottom: 4em;
+            h4{
+                color: #555555;
+            }
+            h1{
+                font-size: 2.3em;
+                font-weight: bold;
+                color: #000;
+                letter-spacing: 3px;
+            }
+            .xian{
+                border-top: 4px solid #5289f4;
+                width: 8%;
+                margin: 0  auto;
+            }
+        }
+        
+        .title{
+            display: flex;
+            justify-content: space-between;
+            .img{
+                width: 30%;
+                position: relative;
+                .lit{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(122, 174, 241, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    color: #fff;
+                    transition: all linear  .5s;
+                    display: none;
+                    span{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            .img:hover .lit{
+                display: block;
+            }
+        }
+
+        @media screen and(max-width:500px) {
+            &{
+                .buj{
+                    h1{
+                        font-size: 1.9em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sale{
+    margin-bottom: 5em;
+    .container{
+        .buj{
+            text-align: center;
+            margin-bottom: 4em;
+            h4{
+                color: #555555;
+            }
+            h1{
+                font-size: 2.3em;
+                font-weight: bold;
+                color: #000;
+                letter-spacing: 3px;
+            }
+            .xian{
+                border-top: 4px solid #5289f4;
+                width: 8%;
+                margin: 0  auto;
+            }
+        }
+
+        .title{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .list{
+                margin-bottom: 3em;
+                width: 31%;
+                box-shadow: 0 0 8px 0 #000;
+
+                .text{
+                    padding: 2.5em 1em ;
+                    p{
+                        font-size: 1.1em;
+                        color: #000;
+                        font-weight: bold;
+                        margin-bottom: 1.7em;
+                        letter-spacing: 2px;
+                    }
+
+                    .yb{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 1em;
+                        .yd1{
+                            img{
+                                width: 22%;
+                            }
+                            span{
+                                padding-left:.5em ;
+                                font-size: 1.1em;
+                                color: #555555;
+                                line-height: 1.2em;
+                            }
+                        }
+                        .yd2{
+                            color: red;
+                            letter-spacing: 2px;
+                            width: 70%;
+                            text-align: right;
+                        }
+                    }
+
+                    .fx{
+                        display: flex;
+                        justify-content: space-between;
+
+                        .fx1,.fx2,.fx3{
+                            width: 30%;
+                            color: #555555;
+                            font-size: .8em;
+                            align-items: center;
+                            cursor: pointer;
+                            img{
+                                width: 18%;
+                            }
+                            
+                        }
+                        .fx2{
+                            text-align: center;
+                        }
+                        .fx3{
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen  and(max-width:750px){
+            &{
+                .title{
+                    .list{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+
+        @media screen and(max-width:480px) {
+            &{
+                .buj{
+                    h1{
+                        font-size: 1.9em;
+                    }
+                }
+
+                .title{
+                    .list{
+                        .text{
+                            .yb{
+                                flex-wrap: wrap;
+                                .yd1{
+                                    margin-bottom: .5em;
+                                }
+                               .yd2{
+                                    width: 100%;
+                                    text-align: left;
+                                    font-size: .9em;
+                                }
+                            }
+
+                            .fx{
+                                flex-wrap: wrap;
+                                .fx1,.fx2,.fx3{
+                                    margin-bottom: .7em;
+                                    img{
+                                        width: 15%;
+                                    }
+                                width: 60%;
+                                }
+                                .fx2{
+                                    text-align: left;
+                                }
+                                .fx3{
+                                    text-align: left;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+
+        @media screen and(max-width:320px){
+            &{
+                .title{
+                    .list{
+                        .text{
+                            padding: 1em 1em ;
+                        }
+                    }
+      
+                }
+            }
+        }
+    }
+}
